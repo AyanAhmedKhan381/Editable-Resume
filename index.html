@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>4 Editable Resume Builder By Ayan Ahmed Khan</h1>
+    <form id="resumeForm" class="">
+        <!-- Persanal Infomation -->
+        <fieldset>
+            <legend>Persanal Infomation</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required> <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone"> Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Profile Picture -->
+             <label for="profilePicture">Profile</label>
+             <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+
+
+
+        </fieldset>
+
+        <br>
+
+        <!-- education -->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education</label>
+            <textarea name="education" id="education" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <br>
+        <!-- experence -->
+        <fieldset>
+            <legend>Experence</legend>
+            <label for="experence">Experence</label>
+            <textarea name="experence" id="experence" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <br>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills</label>
+            <textarea name="skills" id="skills" rows="4" required></textarea> <br>
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput">
+        <!-- Resume will be Generated Blow -->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+<span id="edit-name" class="editable"></span>
